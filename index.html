@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>오늘 점심 뭐 먹지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="wrap">
+    <!-- 질문 영역 -->
+    <section id="question-section" class="panel" aria-label="점심 추천 폼">
+        <div class="note-header">
+            <span>오늘 점심 뭐 먹지? 🤔</span>
+        </div>
+
+        <form id="question-form">
+            <div class="form-grid">
+                <div id="question-container"></div>
+            </div>
+
+            <div class="action-row">
+                <div class="btn-row">
+                    <button class="btn" type="submit" id="submit-btn">
+                        점심 메뉴 AI 추천받기
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- 결과 영역 -->
+    <section id="result-section" class="panel" style="display:none" aria-label="추천 결과">
+        <div class="note-header">
+            <span>🍽 추천 메뉴</span>
+        </div>
+        <div id="menu-result" class="result-box"></div>
+
+        <div class="again-row">
+            <button class="btn" id="again-btn">다시 선택하기</button>
+        </div>
+    </section>
+</main>
+
+<script src="script.js" defer></script>
+</body>
+</html>
