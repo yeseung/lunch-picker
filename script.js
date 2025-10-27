@@ -73,7 +73,7 @@ ${Object.entries(answers).map(([k, v]) => `- ${k}: ${v}`).join("\n")}
     console.log(prompt);
 
     try {
-        const response = await fetch("http://b973456356743434.cafe24.com/ai/lunch-picker.php", {
+        const response = await fetch("https://b973456356743434.cafe24.com/ai/lunch-picker.php", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams({ prompt })
